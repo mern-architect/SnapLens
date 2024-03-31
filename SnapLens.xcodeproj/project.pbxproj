@@ -14,6 +14,12 @@
 		EE920E382BB9CCB30049C96E /* SnapLensTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE920E372BB9CCB30049C96E /* SnapLensTests.swift */; };
 		EE920E422BB9CCB30049C96E /* SnapLensUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE920E412BB9CCB30049C96E /* SnapLensUITests.swift */; };
 		EE920E442BB9CCB30049C96E /* SnapLensUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE920E432BB9CCB30049C96E /* SnapLensUITestsLaunchTests.swift */; };
+		EE920E572BB9D44C0049C96E /* AuthExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE920E562BB9D44C0049C96E /* AuthExtension.swift */; };
+		EE920E592BB9D4550049C96E /* AuthEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE920E582BB9D4550049C96E /* AuthEnum.swift */; };
+		EE920E5B2BB9D4890049C96E /* AuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE920E5A2BB9D4890049C96E /* AuthModel.swift */; };
+		EE920E602BB9D4B70049C96E /* AuthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE920E5F2BB9D4B70049C96E /* AuthController.swift */; };
+		EE920E622BB9D4D60049C96E /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE920E612BB9D4D60049C96E /* SplashView.swift */; };
+		EE920E652BB9D6460049C96E /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE920E642BB9D6460049C96E /* APIRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,12 @@
 		EE920E3D2BB9CCB30049C96E /* SnapLensUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnapLensUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE920E412BB9CCB30049C96E /* SnapLensUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapLensUITests.swift; sourceTree = "<group>"; };
 		EE920E432BB9CCB30049C96E /* SnapLensUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapLensUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EE920E562BB9D44C0049C96E /* AuthExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthExtension.swift; sourceTree = "<group>"; };
+		EE920E582BB9D4550049C96E /* AuthEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthEnum.swift; sourceTree = "<group>"; };
+		EE920E5A2BB9D4890049C96E /* AuthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModel.swift; sourceTree = "<group>"; };
+		EE920E5F2BB9D4B70049C96E /* AuthController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthController.swift; sourceTree = "<group>"; };
+		EE920E612BB9D4D60049C96E /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		EE920E642BB9D6460049C96E /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +106,11 @@
 		EE920E252BB9CCAD0049C96E /* SnapLens */ = {
 			isa = PBXGroup;
 			children = (
+				EE920E632BB9D6280049C96E /* Utils */,
+				EE920E532BB9D1F40049C96E /* Core */,
+				EE920E522BB9D1E60049C96E /* Models */,
+				EE920E512BB9D1E00049C96E /* Views */,
+				EE920E502BB9D1D40049C96E /* Controllers */,
 				EE920E262BB9CCAD0049C96E /* SnapLensApp.swift */,
 				EE920E282BB9CCAD0049C96E /* ContentView.swift */,
 				EE920E2A2BB9CCB20049C96E /* Assets.xcassets */,
@@ -125,6 +142,71 @@
 				EE920E432BB9CCB30049C96E /* SnapLensUITestsLaunchTests.swift */,
 			);
 			path = SnapLensUITests;
+			sourceTree = "<group>";
+		};
+		EE920E502BB9D1D40049C96E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EE920E5F2BB9D4B70049C96E /* AuthController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EE920E512BB9D1E00049C96E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EE920E5C2BB9D4970049C96E /* Splash */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EE920E522BB9D1E60049C96E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EE920E5A2BB9D4890049C96E /* AuthModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EE920E532BB9D1F40049C96E /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				EE920E552BB9D2540049C96E /* Extensions */,
+				EE920E542BB9D2470049C96E /* Enums */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		EE920E542BB9D2470049C96E /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				EE920E582BB9D4550049C96E /* AuthEnum.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		EE920E552BB9D2540049C96E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EE920E562BB9D44C0049C96E /* AuthExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EE920E5C2BB9D4970049C96E /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				EE920E612BB9D4D60049C96E /* SplashView.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		EE920E632BB9D6280049C96E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EE920E642BB9D6460049C96E /* APIRequest.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +339,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE920E592BB9D4550049C96E /* AuthEnum.swift in Sources */,
+				EE920E602BB9D4B70049C96E /* AuthController.swift in Sources */,
 				EE920E292BB9CCAD0049C96E /* ContentView.swift in Sources */,
 				EE920E272BB9CCAD0049C96E /* SnapLensApp.swift in Sources */,
+				EE920E572BB9D44C0049C96E /* AuthExtension.swift in Sources */,
+				EE920E5B2BB9D4890049C96E /* AuthModel.swift in Sources */,
+				EE920E652BB9D6460049C96E /* APIRequest.swift in Sources */,
+				EE920E622BB9D4D60049C96E /* SplashView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
