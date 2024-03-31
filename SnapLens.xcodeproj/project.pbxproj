@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE920E272BB9CCAD0049C96E /* SnapLensApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE920E262BB9CCAD0049C96E /* SnapLensApp.swift */; };
+		EE920E292BB9CCAD0049C96E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE920E282BB9CCAD0049C96E /* ContentView.swift */; };
+		EE920E2B2BB9CCB20049C96E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE920E2A2BB9CCB20049C96E /* Assets.xcassets */; };
+		EE920E2E2BB9CCB20049C96E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE920E2D2BB9CCB20049C96E /* Preview Assets.xcassets */; };
+		EE920E382BB9CCB30049C96E /* SnapLensTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE920E372BB9CCB30049C96E /* SnapLensTests.swift */; };
+		EE920E422BB9CCB30049C96E /* SnapLensUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE920E412BB9CCB30049C96E /* SnapLensUITests.swift */; };
+		EE920E442BB9CCB30049C96E /* SnapLensUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE920E432BB9CCB30049C96E /* SnapLensUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EE920E342BB9CCB30049C96E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE920E1B2BB9CCAD0049C96E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE920E222BB9CCAD0049C96E;
+			remoteInfo = SnapLens;
+		};
+		EE920E3E2BB9CCB30049C96E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE920E1B2BB9CCAD0049C96E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE920E222BB9CCAD0049C96E;
+			remoteInfo = SnapLens;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EE920E232BB9CCAD0049C96E /* SnapLens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapLens.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE920E262BB9CCAD0049C96E /* SnapLensApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapLensApp.swift; sourceTree = "<group>"; };
+		EE920E282BB9CCAD0049C96E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EE920E2A2BB9CCB20049C96E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE920E2D2BB9CCB20049C96E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EE920E332BB9CCB30049C96E /* SnapLensTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnapLensTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE920E372BB9CCB30049C96E /* SnapLensTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapLensTests.swift; sourceTree = "<group>"; };
+		EE920E3D2BB9CCB30049C96E /* SnapLensUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnapLensUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE920E412BB9CCB30049C96E /* SnapLensUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapLensUITests.swift; sourceTree = "<group>"; };
+		EE920E432BB9CCB30049C96E /* SnapLensUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapLensUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE920E202BB9CCAD0049C96E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE920E302BB9CCB30049C96E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE920E3A2BB9CCB30049C96E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EE920E1A2BB9CCAD0049C96E = {
+			isa = PBXGroup;
+			children = (
+				EE920E252BB9CCAD0049C96E /* SnapLens */,
+				EE920E362BB9CCB30049C96E /* SnapLensTests */,
+				EE920E402BB9CCB30049C96E /* SnapLensUITests */,
+				EE920E242BB9CCAD0049C96E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EE920E242BB9CCAD0049C96E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE920E232BB9CCAD0049C96E /* SnapLens.app */,
+				EE920E332BB9CCB30049C96E /* SnapLensTests.xctest */,
+				EE920E3D2BB9CCB30049C96E /* SnapLensUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE920E252BB9CCAD0049C96E /* SnapLens */ = {
+			isa = PBXGroup;
+			children = (
+				EE920E262BB9CCAD0049C96E /* SnapLensApp.swift */,
+				EE920E282BB9CCAD0049C96E /* ContentView.swift */,
+				EE920E2A2BB9CCB20049C96E /* Assets.xcassets */,
+				EE920E2C2BB9CCB20049C96E /* Preview Content */,
+			);
+			path = SnapLens;
+			sourceTree = "<group>";
+		};
+		EE920E2C2BB9CCB20049C96E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EE920E2D2BB9CCB20049C96E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EE920E362BB9CCB30049C96E /* SnapLensTests */ = {
+			isa = PBXGroup;
+			children = (
+				EE920E372BB9CCB30049C96E /* SnapLensTests.swift */,
+			);
+			path = SnapLensTests;
+			sourceTree = "<group>";
+		};
+		EE920E402BB9CCB30049C96E /* SnapLensUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EE920E412BB9CCB30049C96E /* SnapLensUITests.swift */,
+				EE920E432BB9CCB30049C96E /* SnapLensUITestsLaunchTests.swift */,
+			);
+			path = SnapLensUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE920E222BB9CCAD0049C96E /* SnapLens */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE920E472BB9CCB30049C96E /* Build configuration list for PBXNativeTarget "SnapLens" */;
+			buildPhases = (
+				EE920E1F2BB9CCAD0049C96E /* Sources */,
+				EE920E202BB9CCAD0049C96E /* Frameworks */,
+				EE920E212BB9CCAD0049C96E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SnapLens;
+			productName = SnapLens;
+			productReference = EE920E232BB9CCAD0049C96E /* SnapLens.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EE920E322BB9CCB30049C96E /* SnapLensTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE920E4A2BB9CCB30049C96E /* Build configuration list for PBXNativeTarget "SnapLensTests" */;
+			buildPhases = (
+				EE920E2F2BB9CCB30049C96E /* Sources */,
+				EE920E302BB9CCB30049C96E /* Frameworks */,
+				EE920E312BB9CCB30049C96E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE920E352BB9CCB30049C96E /* PBXTargetDependency */,
+			);
+			name = SnapLensTests;
+			productName = SnapLensTests;
+			productReference = EE920E332BB9CCB30049C96E /* SnapLensTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EE920E3C2BB9CCB30049C96E /* SnapLensUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE920E4D2BB9CCB30049C96E /* Build configuration list for PBXNativeTarget "SnapLensUITests" */;
+			buildPhases = (
+				EE920E392BB9CCB30049C96E /* Sources */,
+				EE920E3A2BB9CCB30049C96E /* Frameworks */,
+				EE920E3B2BB9CCB30049C96E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE920E3F2BB9CCB30049C96E /* PBXTargetDependency */,
+			);
+			name = SnapLensUITests;
+			productName = SnapLensUITests;
+			productReference = EE920E3D2BB9CCB30049C96E /* SnapLensUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE920E1B2BB9CCAD0049C96E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					EE920E222BB9CCAD0049C96E = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					EE920E322BB9CCB30049C96E = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = EE920E222BB9CCAD0049C96E;
+					};
+					EE920E3C2BB9CCB30049C96E = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = EE920E222BB9CCAD0049C96E;
+					};
+				};
+			};
+			buildConfigurationList = EE920E1E2BB9CCAD0049C96E /* Build configuration list for PBXProject "SnapLens" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EE920E1A2BB9CCAD0049C96E;
+			productRefGroup = EE920E242BB9CCAD0049C96E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE920E222BB9CCAD0049C96E /* SnapLens */,
+				EE920E322BB9CCB30049C96E /* SnapLensTests */,
+				EE920E3C2BB9CCB30049C96E /* SnapLensUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE920E212BB9CCAD0049C96E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE920E2E2BB9CCB20049C96E /* Preview Assets.xcassets in Resources */,
+				EE920E2B2BB9CCB20049C96E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE920E312BB9CCB30049C96E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE920E3B2BB9CCB30049C96E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE920E1F2BB9CCAD0049C96E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE920E292BB9CCAD0049C96E /* ContentView.swift in Sources */,
+				EE920E272BB9CCAD0049C96E /* SnapLensApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE920E2F2BB9CCB30049C96E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE920E382BB9CCB30049C96E /* SnapLensTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE920E392BB9CCB30049C96E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE920E442BB9CCB30049C96E /* SnapLensUITestsLaunchTests.swift in Sources */,
+				EE920E422BB9CCB30049C96E /* SnapLensUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EE920E352BB9CCB30049C96E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE920E222BB9CCAD0049C96E /* SnapLens */;
+			targetProxy = EE920E342BB9CCB30049C96E /* PBXContainerItemProxy */;
+		};
+		EE920E3F2BB9CCB30049C96E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE920E222BB9CCAD0049C96E /* SnapLens */;
+			targetProxy = EE920E3E2BB9CCB30049C96E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EE920E452BB9CCB30049C96E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EE920E462BB9CCB30049C96E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE920E482BB9CCB30049C96E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SnapLens/Preview Content\"";
+				DEVELOPMENT_TEAM = 3K3WPM5989;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.learning.SnapLens;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EE920E492BB9CCB30049C96E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SnapLens/Preview Content\"";
+				DEVELOPMENT_TEAM = 3K3WPM5989;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.learning.SnapLens;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EE920E4B2BB9CCB30049C96E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3K3WPM5989;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.learning.SnapLensTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SnapLens.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SnapLens";
+			};
+			name = Debug;
+		};
+		EE920E4C2BB9CCB30049C96E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3K3WPM5989;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.learning.SnapLensTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SnapLens.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SnapLens";
+			};
+			name = Release;
+		};
+		EE920E4E2BB9CCB30049C96E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3K3WPM5989;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.learning.SnapLensUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SnapLens;
+			};
+			name = Debug;
+		};
+		EE920E4F2BB9CCB30049C96E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3K3WPM5989;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.learning.SnapLensUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SnapLens;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE920E1E2BB9CCAD0049C96E /* Build configuration list for PBXProject "SnapLens" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE920E452BB9CCB30049C96E /* Debug */,
+				EE920E462BB9CCB30049C96E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE920E472BB9CCB30049C96E /* Build configuration list for PBXNativeTarget "SnapLens" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE920E482BB9CCB30049C96E /* Debug */,
+				EE920E492BB9CCB30049C96E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE920E4A2BB9CCB30049C96E /* Build configuration list for PBXNativeTarget "SnapLensTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE920E4B2BB9CCB30049C96E /* Debug */,
+				EE920E4C2BB9CCB30049C96E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE920E4D2BB9CCB30049C96E /* Build configuration list for PBXNativeTarget "SnapLensUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE920E4E2BB9CCB30049C96E /* Debug */,
+				EE920E4F2BB9CCB30049C96E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EE920E1B2BB9CCAD0049C96E /* Project object */;
+}

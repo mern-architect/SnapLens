@@ -1,0 +1,33 @@
+# Xcode
+.DS_Store
+*/.DS_Store
+*.swp
+*~.nib
+build/
+DerivedData/
+xcuserdata/
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+*.xcuserdatad/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspective
+*.perspectivev3
+*.xccheckout
+*.moved-aside
+
+# Carthage
+/Carthage/
+/Carthage/Checkouts
+
+# CocoaPods
+/Pods
+*.lock
+
+# Swift Package Manager
+/.build/
+
+# App distribution
+*.ipa
+*.xcarchive
