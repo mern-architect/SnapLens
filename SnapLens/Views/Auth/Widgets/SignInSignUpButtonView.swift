@@ -3,6 +3,7 @@ import SwiftUI
 struct SignInSignUpButtonView: View {
     @State private var signUpIsPresent: Bool = false
     @State private var signInIsPresent: Bool = false
+    //https://chat.openai.com/c/db1fa78f-6264-4645-a17f-0b4f199e5f48
     
     var body: some View {
         VStack {
@@ -22,7 +23,7 @@ struct SignInSignUpButtonView: View {
             SignUpView()
         }
         .sheet(isPresented: $signInIsPresent) {
-            SignInView()
+            SignInView(isPresented: $signInIsPresent)
         }
     }
 }

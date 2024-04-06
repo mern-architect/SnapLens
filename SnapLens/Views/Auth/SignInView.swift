@@ -3,6 +3,8 @@ import Firebase
 
 struct SignInView: View {
     
+    @Binding var isPresented: Bool
+    
     @State private var emailAddress: String = ""
     @State private var password: String = ""
     @State private var verifyEmail: Bool = true
@@ -56,6 +58,7 @@ struct SignInView: View {
                 return
             }
            self.resetStates()
+           self.isPresented = false // Dismiss the sheet
         }
     }
     
