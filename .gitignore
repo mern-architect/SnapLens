@@ -31,3 +31,5 @@ xcuserdata/
 # App distribution
 *.ipa
 *.xcarchive
+
+GoogleService-Info.plist

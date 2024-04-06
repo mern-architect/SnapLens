@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE694BE22BC1CA1C0010722F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE694BE12BC1CA1C0010722F /* GoogleService-Info.plist */; };
+		EE694BEB2BC1CA4B0010722F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE694BE42BC1CA4B0010722F /* HomeView.swift */; };
+		EE694BEC2BC1CA4B0010722F /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE694BE52BC1CA4B0010722F /* WelcomeView.swift */; };
+		EE694BED2BC1CA4B0010722F /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE694BE62BC1CA4B0010722F /* SignInView.swift */; };
+		EE694BEE2BC1CA4B0010722F /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE694BE72BC1CA4B0010722F /* SignUpView.swift */; };
+		EE694BEF2BC1CA4B0010722F /* SignInSignUpButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE694BE92BC1CA4B0010722F /* SignInSignUpButtonView.swift */; };
+		EE694BF02BC1CA4B0010722F /* SignOutButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE694BEA2BC1CA4B0010722F /* SignOutButtonView.swift */; };
 		EE920E272BB9CCAD0049C96E /* SnapLensApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE920E262BB9CCAD0049C96E /* SnapLensApp.swift */; };
 		EE920E292BB9CCAD0049C96E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE920E282BB9CCAD0049C96E /* ContentView.swift */; };
 		EE920E2B2BB9CCB20049C96E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE920E2A2BB9CCB20049C96E /* Assets.xcassets */; };
@@ -20,6 +27,8 @@
 		EE920E602BB9D4B70049C96E /* AuthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE920E5F2BB9D4B70049C96E /* AuthController.swift */; };
 		EE920E622BB9D4D60049C96E /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE920E612BB9D4D60049C96E /* SplashView.swift */; };
 		EE920E652BB9D6460049C96E /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE920E642BB9D6460049C96E /* APIRequest.swift */; };
+		EE9D308F2BC1B36F00A1295E /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = EE9D308E2BC1B36F00A1295E /* FirebaseAuth */; };
+		EE9D30912BC1B42E00A1295E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9D30902BC1B42E00A1295E /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +49,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EE694BE12BC1CA1C0010722F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EE694BE42BC1CA4B0010722F /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		EE694BE52BC1CA4B0010722F /* WelcomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		EE694BE62BC1CA4B0010722F /* SignInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		EE694BE72BC1CA4B0010722F /* SignUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		EE694BE92BC1CA4B0010722F /* SignInSignUpButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInSignUpButtonView.swift; sourceTree = "<group>"; };
+		EE694BEA2BC1CA4B0010722F /* SignOutButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignOutButtonView.swift; sourceTree = "<group>"; };
 		EE920E232BB9CCAD0049C96E /* SnapLens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapLens.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE920E262BB9CCAD0049C96E /* SnapLensApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapLensApp.swift; sourceTree = "<group>"; };
 		EE920E282BB9CCAD0049C96E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,6 +72,7 @@
 		EE920E5F2BB9D4B70049C96E /* AuthController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthController.swift; sourceTree = "<group>"; };
 		EE920E612BB9D4D60049C96E /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		EE920E642BB9D6460049C96E /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		EE9D30902BC1B42E00A1295E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE9D308F2BC1B36F00A1295E /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +101,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EE694BE32BC1CA4B0010722F /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				EE694BE82BC1CA4B0010722F /* Widgets */,
+				EE694BE42BC1CA4B0010722F /* HomeView.swift */,
+				EE694BE52BC1CA4B0010722F /* WelcomeView.swift */,
+				EE694BE62BC1CA4B0010722F /* SignInView.swift */,
+				EE694BE72BC1CA4B0010722F /* SignUpView.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		EE694BE82BC1CA4B0010722F /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				EE694BE92BC1CA4B0010722F /* SignInSignUpButtonView.swift */,
+				EE694BEA2BC1CA4B0010722F /* SignOutButtonView.swift */,
+			);
+			path = Widgets;
+			sourceTree = "<group>";
+		};
 		EE920E1A2BB9CCAD0049C96E = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +129,7 @@
 				EE920E362BB9CCB30049C96E /* SnapLensTests */,
 				EE920E402BB9CCB30049C96E /* SnapLensUITests */,
 				EE920E242BB9CCAD0049C96E /* Products */,
+				EE9D308D2BC1B36F00A1295E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,12 +146,14 @@
 		EE920E252BB9CCAD0049C96E /* SnapLens */ = {
 			isa = PBXGroup;
 			children = (
-				EE920E632BB9D6280049C96E /* Utils */,
+				EE694BE12BC1CA1C0010722F /* GoogleService-Info.plist */,
+				EE920E632BB9D6280049C96E /* Utilities */,
 				EE920E532BB9D1F40049C96E /* Core */,
 				EE920E522BB9D1E60049C96E /* Models */,
 				EE920E512BB9D1E00049C96E /* Views */,
 				EE920E502BB9D1D40049C96E /* Controllers */,
 				EE920E262BB9CCAD0049C96E /* SnapLensApp.swift */,
+				EE9D30902BC1B42E00A1295E /* AppDelegate.swift */,
 				EE920E282BB9CCAD0049C96E /* ContentView.swift */,
 				EE920E2A2BB9CCB20049C96E /* Assets.xcassets */,
 				EE920E2C2BB9CCB20049C96E /* Preview Content */,
@@ -155,6 +197,7 @@
 		EE920E512BB9D1E00049C96E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EE694BE32BC1CA4B0010722F /* Auth */,
 				EE920E5C2BB9D4970049C96E /* Splash */,
 			);
 			path = Views;
@@ -201,12 +244,19 @@
 			path = Splash;
 			sourceTree = "<group>";
 		};
-		EE920E632BB9D6280049C96E /* Utils */ = {
+		EE920E632BB9D6280049C96E /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
 				EE920E642BB9D6460049C96E /* APIRequest.swift */,
 			);
-			path = Utils;
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		EE9D308D2BC1B36F00A1295E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,6 +275,9 @@
 			dependencies = (
 			);
 			name = SnapLens;
+			packageProductDependencies = (
+				EE9D308E2BC1B36F00A1295E /* FirebaseAuth */,
+			);
 			productName = SnapLens;
 			productReference = EE920E232BB9CCAD0049C96E /* SnapLens.app */;
 			productType = "com.apple.product-type.application";
@@ -297,6 +350,9 @@
 				Base,
 			);
 			mainGroup = EE920E1A2BB9CCAD0049C96E;
+			packageReferences = (
+				EE9D308C2BC1B23000A1295E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = EE920E242BB9CCAD0049C96E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -315,6 +371,7 @@
 			files = (
 				EE920E2E2BB9CCB20049C96E /* Preview Assets.xcassets in Resources */,
 				EE920E2B2BB9CCB20049C96E /* Assets.xcassets in Resources */,
+				EE694BE22BC1CA1C0010722F /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,10 +397,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE920E592BB9D4550049C96E /* AuthEnum.swift in Sources */,
+				EE9D30912BC1B42E00A1295E /* AppDelegate.swift in Sources */,
 				EE920E602BB9D4B70049C96E /* AuthController.swift in Sources */,
+				EE694BEB2BC1CA4B0010722F /* HomeView.swift in Sources */,
 				EE920E292BB9CCAD0049C96E /* ContentView.swift in Sources */,
 				EE920E272BB9CCAD0049C96E /* SnapLensApp.swift in Sources */,
+				EE694BEF2BC1CA4B0010722F /* SignInSignUpButtonView.swift in Sources */,
+				EE694BED2BC1CA4B0010722F /* SignInView.swift in Sources */,
+				EE694BEC2BC1CA4B0010722F /* WelcomeView.swift in Sources */,
+				EE694BEE2BC1CA4B0010722F /* SignUpView.swift in Sources */,
 				EE920E572BB9D44C0049C96E /* AuthExtension.swift in Sources */,
+				EE694BF02BC1CA4B0010722F /* SignOutButtonView.swift in Sources */,
 				EE920E5B2BB9D4890049C96E /* AuthModel.swift in Sources */,
 				EE920E652BB9D6460049C96E /* APIRequest.swift in Sources */,
 				EE920E622BB9D4D60049C96E /* SplashView.swift in Sources */,
@@ -671,6 +735,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EE9D308C2BC1B23000A1295E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EE9D308E2BC1B36F00A1295E /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EE9D308C2BC1B23000A1295E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EE920E1B2BB9CCAD0049C96E /* Project object */;
 }
