@@ -33,3 +33,4 @@ xcuserdata/
 *.xcarchive
 
 GoogleService-Info.plist
+Keys.swift

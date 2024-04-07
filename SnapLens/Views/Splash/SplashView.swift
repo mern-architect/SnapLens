@@ -1,20 +1,47 @@
-//
-//  SplashView.swift
-//  SnapLens
-//
-//  Created by Vijay Pratap Singh on 31/03/24.
-//
-
 import SwiftUI
 
 struct SplashView: View {
+    
+    @Binding var currentView: ContentView.Views
+    
+    private let savedUserDataKey = "SavedUserData"
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            Color.blue
+                .ignoresSafeArea()
+            
+            Text("My App")
+                .foregroundColor(.white)
+                .font(.title)
+        }
+        .onAppear {
+            loadSavedUserData()
+        }
     }
-}
-
-struct SplashView_Previews: PreviewProvider {
-    static var previews: some View {
-        SplashView()
+    
+    private func loadSavedUserData() {
+        if let savedData = UserDefaults.standard.data(forKey: savedUserDataKey) {
+            do {
+                let userData = try JSONDecoder().decode(SavedUserData.self, from: savedData)
+                navigateToDashboard()
+            } catch {
+                navigateToLogin()
+            }
+        } else {
+            navigateToLogin()
+        }
+    }
+    
+    private func navigateToDashboard() {
+        DispatchQueue.main.async {
+            currentView = .dashboard
+        }
+    }
+    
+    private func navigateToLogin() {
+        DispatchQueue.main.async {
+            currentView = .login
+        }
     }
 }

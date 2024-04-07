@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct HomeView: View {
+struct WelcomeView: View {
     var body: some View {
         VStack{
             Text("Home")

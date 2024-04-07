@@ -1,26 +1,27 @@
-//
-//  ContentView.swift
-//  SnapLens
-//
-//  Created by Vijay Pratap Singh on 31/03/24.
-//
-
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            LearningView()
-        }
-        .padding()
+    @State private var currentView: Views = .splash
+    
+    enum Views {
+        case splash, login, signup, dashboard
     }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+    
+    var body: some View {
+        NavigationStack {
+            Group {
+                switch currentView {
+                    case .splash:
+                        SplashView(currentView: $currentView)
+                    case .login:
+                        LoginView(currentView: $currentView)
+                    case .signup:
+                        SignupView(currentView: $currentView)
+                    case .dashboard:
+                        DashboardView(currentView: $currentView)
+                }
+            }
+            .transition(.slide)
+        }
     }
 }
