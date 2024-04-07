@@ -11,6 +11,7 @@
 		EE2492EE2BC2CCAE00051E5E /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2492ED2BC2CCAE00051E5E /* SignupView.swift */; };
 		EE2492F32BC2CF2200051E5E /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2492F22BC2CF2200051E5E /* DashboardView.swift */; };
 		EE2492F92BC2E2D800051E5E /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2492F82BC2E2D800051E5E /* Keys.swift */; };
+		EE2492FC2BC2F27200051E5E /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2492FB2BC2F27200051E5E /* CameraView.swift */; };
 		EE287F432BC1DB2D00F59E5F /* LearningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE287F422BC1DB2D00F59E5F /* LearningView.swift */; };
 		EE287F6C2BC1DB3900F59E5F /* ProgressUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE287F452BC1DB3900F59E5F /* ProgressUIView.swift */; };
 		EE287F6D2BC1DB3900F59E5F /* DividerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE287F462BC1DB3900F59E5F /* DividerView.swift */; };
@@ -97,6 +98,7 @@
 		EE2492ED2BC2CCAE00051E5E /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		EE2492F22BC2CF2200051E5E /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		EE2492F82BC2E2D800051E5E /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		EE2492FB2BC2F27200051E5E /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		EE287F422BC1DB2D00F59E5F /* LearningView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearningView.swift; sourceTree = "<group>"; };
 		EE287F452BC1DB3900F59E5F /* ProgressUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressUIView.swift; sourceTree = "<group>"; };
 		EE287F462BC1DB3900F59E5F /* DividerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DividerView.swift; sourceTree = "<group>"; };
@@ -218,6 +220,14 @@
 				EE2492F22BC2CF2200051E5E /* DashboardView.swift */,
 			);
 			path = Normal;
+			sourceTree = "<group>";
+		};
+		EE2492FA2BC2F24A00051E5E /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				EE2492FB2BC2F27200051E5E /* CameraView.swift */,
+			);
+			path = Camera;
 			sourceTree = "<group>";
 		};
 		EE287F412BC1DAE600F59E5F /* Learning */ = {
@@ -359,6 +369,7 @@
 		EE920E512BB9D1E00049C96E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EE2492FA2BC2F24A00051E5E /* Camera */,
 				EE2492EA2BC2CC8700051E5E /* Auth */,
 				EE287F412BC1DAE600F59E5F /* Learning */,
 				EE920E5C2BB9D4970049C96E /* Splash */,
@@ -563,6 +574,7 @@
 				EE2492EE2BC2CCAE00051E5E /* SignupView.swift in Sources */,
 				EE920E592BB9D4550049C96E /* AuthEnum.swift in Sources */,
 				EE287F7C2BC1DB3900F59E5F /* RadialGradientView.swift in Sources */,
+				EE2492FC2BC2F27200051E5E /* CameraView.swift in Sources */,
 				EE9D30912BC1B42E00A1295E /* AppDelegate.swift in Sources */,
 				EE920E602BB9D4B70049C96E /* AuthController.swift in Sources */,
 				EE694BEB2BC1CA4B0010722F /* WelcomeView.swift in Sources */,
@@ -780,6 +792,7 @@
 				DEVELOPMENT_TEAM = 3K3WPM5989;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -809,6 +822,7 @@
 				DEVELOPMENT_TEAM = 3K3WPM5989;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

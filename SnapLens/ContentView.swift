@@ -1,10 +1,10 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var currentView: Views = .splash
+    @State private var currentView: Views = .camera
     
     enum Views {
-        case splash, login, signup, dashboard
+        case splash, login, signup, dashboard, camera
     }
     
     var body: some View {
@@ -19,6 +19,8 @@ struct ContentView: View {
                         SignupView(currentView: $currentView)
                     case .dashboard:
                         DashboardView(currentView: $currentView)
+                    case .camera:
+                        CameraView(currentView: $currentView)
                 }
             }
             .transition(.slide)
