@@ -1,29 +1,43 @@
 import SwiftUI
+import Combine
 
 struct ContentView: View {
-    @State private var currentView: Views = .camera
-    
-    enum Views {
+    @StateObject private var navigationState = NavigationState()
+
+    var body: some View {
+        NavigationStack(path: $navigationState.navigationPath) {
+            content
+                .environmentObject(navigationState)
+        }
+    }
+
+    @ViewBuilder
+    private var content: some View {
+        switch navigationState.currentNavigationState {
+        case .splash:
+            SplashView()
+        case .login:
+            LoginView()
+        case .signup:
+            SignupView()
+        case .dashboard:
+            DashboardView()
+        case .camera:
+            CameraView()
+        }
+    }
+}
+
+class NavigationState: ObservableObject {
+    @Published var navigationPath = NavigationPath()
+    @Published var currentNavigationState: NavigationViewState = .splash
+
+    enum NavigationViewState: Hashable {
         case splash, login, signup, dashboard, camera
     }
-    
-    var body: some View {
-        NavigationStack {
-            Group {
-                switch currentView {
-                    case .splash:
-                        SplashView(currentView: $currentView)
-                    case .login:
-                        LoginView(currentView: $currentView)
-                    case .signup:
-                        SignupView(currentView: $currentView)
-                    case .dashboard:
-                        DashboardView(currentView: $currentView)
-                    case .camera:
-                        CameraView(currentView: $currentView)
-                }
-            }
-            .transition(.slide)
-        }
+
+    func navigate(to state: NavigationViewState) {
+        currentNavigationState = state
+        navigationPath.append(state)
     }
 }

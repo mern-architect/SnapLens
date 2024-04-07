@@ -1,16 +1,14 @@
 import SwiftUI
 
 struct SplashView: View {
-    
-    @Binding var currentView: ContentView.Views
-    
+    @EnvironmentObject var navigationState: NavigationState
+
     private let savedUserDataKey = "SavedUserData"
-    
+
     var body: some View {
         ZStack {
             Color.blue
                 .ignoresSafeArea()
-            
             Text("My App")
                 .foregroundColor(.white)
                 .font(.title)
@@ -19,11 +17,11 @@ struct SplashView: View {
             loadSavedUserData()
         }
     }
-    
+
     private func loadSavedUserData() {
         if let savedData = UserDefaults.standard.data(forKey: savedUserDataKey) {
             do {
-                let userData = try JSONDecoder().decode(SavedUserData.self, from: savedData)
+                _ = try JSONDecoder().decode(SavedUserData.self, from: savedData)
                 navigateToDashboard()
             } catch {
                 navigateToLogin()
@@ -32,16 +30,16 @@ struct SplashView: View {
             navigateToLogin()
         }
     }
-    
+
     private func navigateToDashboard() {
         DispatchQueue.main.async {
-            currentView = .dashboard
+            navigationState.navigate(to: .dashboard)
         }
     }
-    
+
     private func navigateToLogin() {
         DispatchQueue.main.async {
-            currentView = .login
+            navigationState.navigate(to: .login)
         }
     }
 }

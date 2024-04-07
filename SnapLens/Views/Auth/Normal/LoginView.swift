@@ -100,7 +100,7 @@ enum NetworkError: Error {
 
 struct LoginView: View {
     
-    @Binding var currentView: ContentView.Views
+//    @Binding var currentView: ContentView.Views
     
     @State private var email = ""
     @State private var password = ""
@@ -134,7 +134,7 @@ struct LoginView: View {
             .disabled(authService.isLoading)
             
             Button(action: {
-                currentView = .signup
+//                currentView = .signup
             }) {
                 Text("Sign Up")
                     .foregroundColor(.blue)
@@ -153,7 +153,7 @@ struct LoginView: View {
             switch result {
             case .success:
                 DispatchQueue.main.async {
-                    currentView = .dashboard
+//                    currentView = .dashboard
                 }
             case .failure(let error):
                 DispatchQueue.main.async {

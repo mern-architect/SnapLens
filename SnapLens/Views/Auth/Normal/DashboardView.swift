@@ -10,16 +10,16 @@ struct SavedUserDataUpdated: Codable {
 
 struct DashboardView: View {
     
-    @Binding var currentView: ContentView.Views
+//    @Binding var currentView: ContentView.Views
     
     @State private var savedUserDataUpdated: SavedUserDataUpdated?
     
     private let savedUserDataKey = "SavedUserData"
     
-    init(currentView: Binding<ContentView.Views>) {
-            _currentView = currentView
-            loadSavedUserData()
-        }
+//    init(currentView: Binding<ContentView.Views>) {
+//            _currentView = currentView
+//            loadSavedUserData()
+//        }
     
     var body: some View {
         VStack {
