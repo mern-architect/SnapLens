@@ -11,10 +11,12 @@ import UIKit
 @main
 struct SnapLensApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
-
+    let navigationState = NavigationState()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(navigationState)
         }
     }
 }

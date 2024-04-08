@@ -1,7 +1,8 @@
 import SwiftUI
 
 struct SplashView: View {
-    @EnvironmentObject var navigationState: NavigationState
+    var navigationState: NavigationState
+
 
     private let savedUserDataKey = "SavedUserData"
 
@@ -33,13 +34,13 @@ struct SplashView: View {
 
     private func navigateToDashboard() {
         DispatchQueue.main.async {
-            navigationState.navigate(to: .dashboard)
+            navigationState.replace(with: .dashboard)
         }
     }
 
     private func navigateToLogin() {
         DispatchQueue.main.async {
-            navigationState.navigate(to: .login)
+            navigationState.replace(with: .login)
         }
     }
 }

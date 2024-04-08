@@ -2,7 +2,7 @@ import SwiftUI
 
 struct SignupView: View {
     
-//    @Binding var currentView: ContentView.Views
+    var navigationState: NavigationState
     
     @State private var email = ""
     @State private var password = ""

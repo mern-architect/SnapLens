@@ -100,7 +100,8 @@ enum NetworkError: Error {
 
 struct LoginView: View {
     
-//    @Binding var currentView: ContentView.Views
+    var navigationState: NavigationState
+
     
     @State private var email = ""
     @State private var password = ""
@@ -134,9 +135,9 @@ struct LoginView: View {
             .disabled(authService.isLoading)
             
             Button(action: {
-//                currentView = .signup
+                navigationState.navigate(to: .signup)
             }) {
-                Text("Sign Up")
+                Text("Sign Up...")
                     .foregroundColor(.blue)
             }
         }

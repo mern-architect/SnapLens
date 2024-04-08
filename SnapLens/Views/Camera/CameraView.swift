@@ -127,7 +127,7 @@ struct CameraPreview: UIViewControllerRepresentable {
 
 
 struct CameraView: View {
-//    @Binding var currentView: ContentView.Views
+    var navigationState: NavigationState
     
     let cameraManager = CameraManager()
     @State private var isCameraAuthorized: Bool? = nil

@@ -1,13 +1,19 @@
 import SwiftUI
 import Combine
 
+enum NavigationViewState: Hashable {
+    case splash, login, signup, dashboard, camera
+}
+
 struct ContentView: View {
     @StateObject private var navigationState = NavigationState()
 
     var body: some View {
         NavigationStack(path: $navigationState.navigationPath) {
             content
-                .environmentObject(navigationState)
+            .navigationDestination(for: NavigationViewState.self) { state in
+                navigationDestination(for: state)
+            }
         }
     }
 
@@ -15,15 +21,31 @@ struct ContentView: View {
     private var content: some View {
         switch navigationState.currentNavigationState {
         case .splash:
-            SplashView()
+            SplashView(navigationState: navigationState)
         case .login:
-            LoginView()
+            LoginView(navigationState: navigationState)
         case .signup:
-            SignupView()
+            SignupView(navigationState: navigationState)
         case .dashboard:
-            DashboardView()
+            DashboardView(navigationState: navigationState)
         case .camera:
-            CameraView()
+            CameraView(navigationState: navigationState)
+        }
+    }
+
+    @ViewBuilder
+    private func navigationDestination(for state: NavigationViewState) -> some View {
+        switch state {
+        case .splash:
+            SplashView(navigationState: navigationState)
+        case .login:
+            LoginView(navigationState: navigationState)
+        case .signup:
+            SignupView(navigationState: navigationState)
+        case .dashboard:
+            DashboardView(navigationState: navigationState)
+        case .camera:
+            CameraView(navigationState: navigationState)
         }
     }
 }
@@ -32,8 +54,10 @@ class NavigationState: ObservableObject {
     @Published var navigationPath = NavigationPath()
     @Published var currentNavigationState: NavigationViewState = .splash
 
-    enum NavigationViewState: Hashable {
-        case splash, login, signup, dashboard, camera
+    func replace(with state: NavigationViewState) {
+        currentNavigationState = state
+        navigationPath = NavigationPath()
+        navigationPath.append(state)
     }
 
     func navigate(to state: NavigationViewState) {

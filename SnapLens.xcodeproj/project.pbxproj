@@ -78,6 +78,8 @@
 		EE920E652BB9D6460049C96E /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE920E642BB9D6460049C96E /* APIRequest.swift */; };
 		EE9D308F2BC1B36F00A1295E /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = EE9D308E2BC1B36F00A1295E /* FirebaseAuth */; };
 		EE9D30912BC1B42E00A1295E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9D30902BC1B42E00A1295E /* AppDelegate.swift */; };
+		EEEA1A0D2BC46BBB0053E3F6 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEA1A0C2BC46BBB0053E3F6 /* ImagePickerView.swift */; };
+		EEEA1A0F2BC46C8D0053E3F6 /* LoginSampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEA1A0E2BC46C8D0053E3F6 /* LoginSampleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -171,6 +173,8 @@
 		EE920E612BB9D4D60049C96E /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		EE920E642BB9D6460049C96E /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		EE9D30902BC1B42E00A1295E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EEEA1A0C2BC46BBB0053E3F6 /* ImagePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
+		EEEA1A0E2BC46C8D0053E3F6 /* LoginSampleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginSampleView.swift; path = SnapLens/Views/Learning/LoginSampleView.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -256,6 +260,7 @@
 				EE2492FD2BC2F77F00051E5E /* Basic */,
 				EE287F442BC1DB3900F59E5F /* Widgets */,
 				EE287F422BC1DB2D00F59E5F /* LearningView.swift */,
+				EEEA1A0E2BC46C8D0053E3F6 /* LoginSampleView.swift */,
 			);
 			path = Learning;
 			sourceTree = "<group>";
@@ -390,6 +395,7 @@
 		EE920E512BB9D1E00049C96E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EEEA1A092BC462AF0053E3F6 /* CameraPicker */,
 				EE2492FA2BC2F24A00051E5E /* Camera */,
 				EE2492EA2BC2CC8700051E5E /* Auth */,
 				EE287F412BC1DAE600F59E5F /* Learning */,
@@ -453,6 +459,14 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EEEA1A092BC462AF0053E3F6 /* CameraPicker */ = {
+			isa = PBXGroup;
+			children = (
+				EEEA1A0C2BC46BBB0053E3F6 /* ImagePickerView.swift */,
+			);
+			path = CameraPicker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -601,6 +615,7 @@
 				EE920E602BB9D4B70049C96E /* AuthController.swift in Sources */,
 				EE694BEB2BC1CA4B0010722F /* WelcomeView.swift in Sources */,
 				EE287F722BC1DB3900F59E5F /* LazyVStackView.swift in Sources */,
+				EEEA1A0D2BC46BBB0053E3F6 /* ImagePickerView.swift in Sources */,
 				EE2493062BC2F77F00051E5E /* operators.swift in Sources */,
 				EE287F7B2BC1DB3900F59E5F /* LazyVGridView.swift in Sources */,
 				EE287F842BC1DB3900F59E5F /* LazyHStackView.swift in Sources */,
@@ -611,6 +626,7 @@
 				EE287F752BC1DB3900F59E5F /* LinearGradientView.swift in Sources */,
 				EE287F892BC1DB3900F59E5F /* ImageView.swift in Sources */,
 				EE287F762BC1DB3900F59E5F /* TextFieldView.swift in Sources */,
+				EEEA1A0F2BC46C8D0053E3F6 /* LoginSampleView.swift in Sources */,
 				EE287F912BC1DB3900F59E5F /* EllipseView.swift in Sources */,
 				EE287F8C2BC1DB3900F59E5F /* GroupUIView.swift in Sources */,
 				EE2492F92BC2E2D800051E5E /* Keys.swift in Sources */,

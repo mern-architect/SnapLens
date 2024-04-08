@@ -10,7 +10,7 @@ struct SavedUserDataUpdated: Codable {
 
 struct DashboardView: View {
     
-//    @Binding var currentView: ContentView.Views
+    var navigationState: NavigationState
     
     @State private var savedUserDataUpdated: SavedUserDataUpdated?
     
